@@ -104,7 +104,7 @@ export function Detail(props) {
     getDownloadURL(imgRef).then((url) => setImgPath(url))
 
     return (
-      <img src={imgPath} className="img-fluid" />
+      <img src={imgPath} className="img-fluid"  />
     )
   }
 
@@ -124,7 +124,6 @@ export function Detail(props) {
             <p>Summary: {movieData.summary}</p>
             <p>{movieData.year}</p>
             <p>IMDB: {movieData.IMDB}</p>
-            <p>Photo: {movieData.image}</p>
 
           </Col>
         </Row>
