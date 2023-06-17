@@ -1,8 +1,8 @@
 import '../styles/about.css'
 export function About() {
     return (
-        <><h1 class="tests"><center>About</center></h1>
-            <h2>Welcome to My Movie club </h2></>
+        <><h1 class="tests">About</h1>
+        <h2 class="tests2">Welcome to My Movie Club!</h2></>
 
     )
 }
