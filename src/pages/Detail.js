@@ -104,7 +104,7 @@ export function Detail(props) {
     getDownloadURL(imgRef).then((url) => setImgPath(url))
 
     return (
-      <img src={imgPath} className="img-fluid"  />
+      <img src={imgPath} className="img-fluid" />
     )
   }
 
@@ -114,6 +114,7 @@ export function Detail(props) {
       <Container>
         <Row className="my-3">
           <Col md="4">
+
             <Image path={movieData.image} />
           </Col>
           <Col md="8">
@@ -122,8 +123,8 @@ export function Detail(props) {
             <p>Directors: {movieData.Director}</p>
             <p>Category: {movieData.Category}</p>
             <p>Summary: {movieData.summary}</p>
-            <p>{movieData.year}</p>
-            <p>IMDB: {movieData.IMDB}</p>
+            <p>Year: {movieData.year}</p>
+            <p>IMDB: <a href="https://www.imdb.com/title/tt1170358/">{movieData.IMDB}</a></p>
 
           </Col>
         </Row>
