@@ -1,7 +1,8 @@
-export function About () {
+import '../styles/about.css'
+export function About() {
     return (
-        <div>
-            <h1>About</h1>
-        </div>
+        <><h1 class="tests"><center>About</center></h1>
+            <h2>Welcome to My Movie club </h2></>
+
     )
 }
