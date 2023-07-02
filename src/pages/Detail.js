@@ -20,7 +20,7 @@ import { onAuthStateChanged } from "firebase/auth";
 export function Detail(props) {
   const [movieData, setMovieData] = useState()
   const [auth, setAuth] = useState()
-  const [movieReviews, setMovieReviews] = useState([])
+  const [movieReviews, setMovieReviews ] = useState([])
 
   let { movieId } = useParams()
 
@@ -79,7 +79,7 @@ export function Detail(props) {
       getReviews()
     }
     else {
-      // no book exists with the ID
+      // no Movie exists with the ID
     }
   }
 
